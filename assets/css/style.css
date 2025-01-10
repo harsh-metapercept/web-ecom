@@ -1,0 +1,474 @@
+/* Navbar Background and General Styles */
+.custom-navbar {
+    background-color: #80b7ff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.custom-navbar .logo {
+    height: 80px; /* Make the logo larger */
+    width: auto;
+    margin-right: 30px; /* Add spacing between logo and nav items */
+}
+
+/* Centering and spacing between navbar links */
+.custom-navbar .navbar-nav {
+    gap: 150px; /* Space between each link */
+    justify-content: center;
+    width: 100%;
+    margin-right: 180px;
+}
+
+/* Navbar Link Styling */
+.custom-navbar .nav-link {
+    color: #fff; /* White text for better contrast against light blue */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+    color: #003366; /* Dark blue on hover for better contrast */
+}
+
+/* Search and Cart Icons */
+.search-icon,
+.cart-icon {
+    color: #fff; /* White for icons to match the navbar text */
+    font-size: 1.5rem;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.search-icon:hover,
+.cart-icon:hover {
+    color: #003366; /* Dark blue on hover */
+}
+
+/* Badge on Cart Icon */
+.cart-icon .badge {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    background-color: #ff6f61; /* Red badge for visibility */
+    color: white;
+}
+
+/* Navbar Toggler for Mobile */
+.navbar-toggler {
+    border-color: #fff; /* White border for the toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' fill='white'><path stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    /* White toggler icon for mobile view */
+}
+/* logo style */
+.custom-navbar .logo {
+    height: 100px; /* Adjust the height to make it larger */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add some spacing between the logo and the nav items */
+    margin-left: 30px;
+}
+
+/* Body Styling */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    flex: 1;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+hr {
+    border: 0; /* Removes default border */
+    height: 1px; /* Sets the height of the line */
+    background: #ddd; /* Sets the color of the line */
+    margin: 20px 0; /* Adds space above and below the line */
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Product Section */
+#products {
+    padding: 20px;
+}
+
+#products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Category Section Styling */
+.category {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for category section */
+    display: flex; /* Flexbox for aligning product cards */
+    flex-wrap: wrap; /* Wrap cards to new lines as needed */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center align cards horizontally */
+}
+
+/* Product Card Styling */
+.product {
+    background-color: #fff; /* White background for card */
+    border: 1px solid #ddd; /* Light border for card */
+    border-radius: 8px; /* Rounded corners for card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px;
+    text-align: center;
+    width: 250px; /* Fixed width for cards */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Product Image Styling */
+.product img {
+    width: 200px; /* Set a fixed width for the image */
+    height: 250px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the fixed area without distortion */
+    border-bottom: 1px solid #ddd; /* Separator line below image */
+    margin-bottom: 15px; /* Space between image and text */
+}
+
+/* Product Name Styling */
+.product h4 {
+    font-size: 1.25rem; /* Slightly larger font size for product name */
+    margin: 10px 0; /* Space around product name */
+}
+
+/* Product Price Styling */
+.product p {
+    font-size: 1rem; /* Standard font size for price */
+    color: #333; /* Dark color for price */
+    margin: 10px 0; /* Space around price */
+}
+
+/* Button Styling */
+.product button {
+    background-color: #003366; /* Dark blue background for button */
+    color: #fff; /* White text for button */
+    border: none;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 4px; /* Rounded corners for button */
+    font-size: 1rem; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Button Hover Effect */
+.product button:hover {
+    background-color: #002244; /* Darker blue on hover */
+}
+
+/* Hover Effect for Product Card */
+.product:hover {
+    transform: translateY(-5px); /* Lift card up on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Footer Styling */
+/* footer {
+    background-color: #80b7ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    
+} */
+
+/* Footer Styling */
+footer {
+    background-color: #80b7ff; /* Light blue background */
+    color: #fff; /* White text */
+    text-align: center; /* Center-align text */
+    padding: 15px 20px; /* Match padding to navbar */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.5rem; /* Match font size to navbar links */
+    font-weight: bold; /* Match font weight to navbar links */
+    text-transform: uppercase; /* Match text transformation to navbar links */
+    letter-spacing: 0.05em; /* Match letter spacing to navbar links */
+}
+
+/* Footer Links Styling */
+footer a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Adjust spacing between links */
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+footer a:hover,
+footer a:focus {
+    color: #003366; /* Dark blue on hover for contrast */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* About Section */
+.about-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #003366; /* Dark blue color for the title */
+}
+
+.about-section p.lead {
+    font-size: 1.5rem;
+    color: #333; /* Darker color for lead paragraph */
+    margin-top: 20px;
+    letter-spacing: 0.05em; /* Add spacing for readability */
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    color: #333; /* Text color */
+    line-height: 1.8; /* Increase line height for readability */
+    letter-spacing: 0.03em; /* Slight letter spacing */
+    margin-top: 20px;
+}
+
+/* Custom size for carousel images */
+.carousel-image {
+    max-width: 500px; /* Set a fixed max width */
+    max-height: 300px; /* Set a fixed max height */
+    object-fit: contain; /* Keeps the aspect ratio intact and does not crop */
+    margin: 0 auto; /* Center the image horizontally */
+}
+.carousel-image {
+    max-width: 500px;
+    max-height: 300px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Left-aligned captions */
+.carousel-caption-left {
+    padding-left: 30px;
+}
+
+.carousel-caption-left h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000; /* White text for visibility */
+    margin-left: 500px;
+}
+
+.carousel-caption-left p {
+    font-size: 1.2rem;
+    color: #000000; /* White text for visibility */
+    margin-left: 500px;
+}
+
+/* Make sure the caption is visible against the image */
+.carousel-item {
+    background-color: #ffffff; /* Semi-transparent background */
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #80b7ff; /* Replace with your desired color */
+    border-radius: 50%; /* Optional: for a rounded background */
+}
+
+/* contact form styling  */
+/* Contact Section Styling */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background to match category section */
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #003366; /* Dark blue color for the title */
+    margin-bottom: 20px;
+}
+
+.contact-section .form-label {
+    font-size: 1.2rem;
+    color: #333; /* Dark color for labels */
+    font-weight: bold;
+}
+
+.contact-section .form-control {
+    border-radius: 4px; /* Rounded corners for input fields */
+    border: 1px solid #ddd; /* Light border for input fields */
+    padding: 10px; /* Padding inside input fields */
+    font-size: 1rem; /* Font size for input text */
+}
+
+.contact-section .form-control:focus {
+    border-color: #003366; /* Dark blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 51, 102, 0.25); /* Blue shadow on focus */
+}
+
+.contact-section .btn-primary {
+    background-color: #003366; /* Dark blue background for button */
+    border: none;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 4px; /* Rounded corners for button */
+    font-size: 1rem; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.contact-section .btn-primary:hover {
+    background-color: #002244; /* Darker blue on hover */
+}
+
+/* Container for form */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9; /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Form title */
+.container h3 {
+    font-size: 2.5rem;
+    color: #003366; /* Dark blue color */
+    margin-bottom: 20px;
+    text-align: center; /* Centered title */
+}
+
+/* Input and Textarea fields */
+.container input,
+.container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Space between fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Focus state for inputs */
+.container input:focus,
+.container textarea:focus {
+    border-color: #003366; /* Dark blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 51, 102, 0.25); /* Shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.container button {
+    background-color: #003366; /* Dark blue background */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Button padding */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1.2rem;
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    width: 100%; /* Full-width button */
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+.container button:hover {
+    background-color: #002244; /* Darker blue on hover */
+}
+
+/* Form responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h3 {
+        font-size: 2rem;
+    }
+
+    .container button {
+        font-size: 1rem;
+    }
+}
+
+/* Cart Page Styling */
+.cart-item {
+    background-color: #f8f9fa; /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.cart-item img {
+    max-height: 150px;
+    width: auto;
+}
+
+.cart-summary {
+    background-color: #ffffff; /* White background for summary */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.cart-summary p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.cart-summary h4 {
+    font-weight: bold;
+    color: #003366;
+}
+
+.cart-summary .btn-primary {
+    background-color: #80b7ff;
+    border-color: #80b7ff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cart-summary .btn-primary:hover {
+    background-color: #003366;
+    border-color: #003366;
+}

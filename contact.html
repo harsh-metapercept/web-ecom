@@ -1,0 +1,135 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Masters</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Bootstrap CSS for Navbar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/Pc_Masters-removebg-preview.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav"> <!-- Center the links -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./cart.html">Cart</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex">
+                    <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="cart-icon position-relative">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            0
+                        </span>
+                    </a>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- contact form start -->
+    <!-- Contact Section -->
+    <!-- Contact Form -->
+    <section class="section">
+        <div class="container">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h3>GET IN TOUCH</h3>
+                <input type="hidden" name="access_key" value="d47aab18-69b5-4991-85b0-bc4828855cef">
+                <p>
+                <h4>NAME:</h4><input type="text" name="name" required></p>
+
+                <p>
+                <h4>EMAIL:</h4> <input type="email" name="email" required></p>
+
+                <p>
+                <h4>MESSAGE:</h4><textarea name="message" required></textarea></p>
+
+
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <!-- Custom Confirmation / Success Page -->
+                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+                <button type="submit">Submit Form</button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- contact form end -->
+
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>Contact us at</p>
+        <p>Follow us:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <!-- add your api id  -->
+    <script src="#">
+    </script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "username",
+                Password: "password",
+                To: 'them@website.com',
+                From: "you@isp.com",
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
